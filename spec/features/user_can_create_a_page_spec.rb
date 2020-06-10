@@ -11,7 +11,7 @@ RSpec.feature "User can create a page" do
       fill_in "Title", with: title
       fill_in "Content", with: content
 
-      click_button "Save Page"
+      click_button "Create Page"
 
       expect(page).to have_content(title)
       expect(page).to have_content(content)
