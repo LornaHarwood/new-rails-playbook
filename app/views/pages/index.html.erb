@@ -10,6 +10,11 @@
     <tr>
       <td><%= page.title %></td>
       <td><%= link_to 'Show', page_path(page), data: { slug: page.slug } %></td>
+      <td>
+        <%= form_with model: page, method: :delete, local: true do |form| %>
+          <% form.submit "Delete", data: { slug: page.slug, action: "delete" } %>
+        <% end %>
+      </td>
     </tr>
   <% end %>
 </table>
