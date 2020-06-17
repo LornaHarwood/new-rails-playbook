@@ -9,7 +9,7 @@ RSpec.feature "User can see list of all pages" do
 
       expect(page).to have_content("List of all Pages")
       expect(page).to have_content(test_page.title)
-      expect(page).to have_content("Show")
+      expect(page).to have_button("Show")
       expect(page).to have_button("Delete")
     end
   end
@@ -26,7 +26,7 @@ RSpec.feature "User can see list of all pages" do
       expect(page).to have_content(test_page_one.title)
       expect(page).to have_content(test_page_two.title)
       expect(page).to have_content(test_page_three.title)
-      expect(page).to have_content("Show")
+      expect(page).to have_button("Show")
       expect(page).to have_button("Delete")
     end
   end
