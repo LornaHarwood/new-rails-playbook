@@ -6,7 +6,11 @@ RSpec.feature "User can create a page" do
       title = "New Page"
       content = "New Page Content"
 
-      visit new_page_path
+      visit pages_path
+
+      within "nav" do
+        click_link "Create Page"
+      end
 
       fill_in "Title", with: title
       fill_in "Content", with: content
