@@ -4,14 +4,21 @@
     <title>Playbook</title>
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
   </head>
 
   <body>
     <header>
-      <nav>
-        <a href="/pages/new">Create Page</a>
+      <nav class="top-nav-bar">
+        <ul>
+          <li>
+            <a href="/pages/new">Create Page</a>
+          </li>
+        </ul>
       </nav>
     </header>
-    <%= yield %>
+    <main>
+      <%= yield %>
+    </main>
   </body>
 </html>
