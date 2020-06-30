@@ -7,9 +7,37 @@ $ivory: #f9f8f5;
 
 $yellow-light: #fcd672;
 $blue-light: #73c3d5;
+$yellow-dark: #ff9e18;
 
 $font-family-serif: "Cardo", -apple-system, serif;
 $font-family-sans-serif: "Poppins", sans-serif;
+
+body {
+  font-family: $font-family-serif;
+  font-weight: 400;
+  font-size: 15pt;
+  color: $navy;
+  line-height: 1.5;
+  margin: 0;
+  padding: 30px;
+  background: $ivory;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-sans-serif;
+  font-weight: 600;
+  color: $navy;
+}
+
+main {
+  margin-top: 75px; // 75px is the height of the nav bar
+  padding-left: 20px;
+}
 
 .top-nav-bar {
   background-color: $blue-light;
@@ -44,6 +72,43 @@ $font-family-sans-serif: "Poppins", sans-serif;
           color: $navy;
         }
       }
+    }
+  }
+}
+
+.index-page {
+  ul {
+    list-style: none;
+  }
+
+  li {
+    font-family: $font-family-serif;
+    color: $navy;
+    padding-bottom: 10px;
+
+    form {
+      display: inline;
+    }
+  }
+
+  input[type="submit"] {
+    color: $ivory;
+    font-family: $font-family-sans-serif;
+    line-height: 1.35;
+    font-weight: 600;
+    font-size: 15px;
+    background: $navy;
+    border: 1px solid $navy;
+    width: 10%;
+    display: inline;
+
+    &:hover,
+    &:active {
+      text-decoration-line: underline;
+      text-decoration-color: $yellow-dark;
+      text-decoration-thickness: 0.1em;
+      color: none;
+      cursor: pointer;
     }
   }
 }
