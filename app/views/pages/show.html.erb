@@ -1,4 +1,5 @@
-<%= @page.title %>
-<%= @page.content %>
-
-<%= link_to 'Edit', edit_page_path(@page) %>
+<div class="show-page">
+<h2><%= @page.title %></h2>
+  <div><%= @page.content %></div>
+    <%= link_to 'Edit', edit_page_path(@page) %>
+</div>

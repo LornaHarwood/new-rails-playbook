@@ -112,3 +112,29 @@ main {
     }
   }
 }
+
+.show-page {
+  div {
+    padding-bottom: 20px;
+    list-style: none;
+  }
+
+  a {
+    font-size: inherit;
+    font-weight: 400;
+    text-decoration-line: underline;
+    text-decoration-color: $blue-light;
+    text-decoration-thickness: 0.1em;
+    padding-top: 20px;
+    font-family: $font-family-serif;
+    color: $navy;
+
+    &:hover,
+    &:active {
+      text-decoration-line: underline;
+      text-decoration-color: $navy;
+      text-decoration-thickness: 0.1em;
+      color: $navy;
+    }
+  }
+}
