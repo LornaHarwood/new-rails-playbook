@@ -1,22 +1,22 @@
-<%= form_with model: @page, local: true do |form| %>
+<%= form_with model: @page, class: "page-form", local: true do |form| %>
 
-  <p>
-    <%= form.label :title %><br>
-    <%= form.text_field :title %>
-  </p>
-  
-  <p>
-    <%= form.label :slug %><br>
-    <%= form.text_field :slug %>
- </p>
+  <h2>
+    <%= form.label :title %>
+  </h2>
+  <%= form.text_field :title %>
 
-  <p>
-    <%= form.label :content %><br>
-    <%= form.text_area :content %>
-  </p>
+  <h2>
+    <%= form.label :slug %>
+  </h2>
+  <%= form.text_field :slug %>
 
-  <p>
+  <h2>
+    <%= form.label :content %>
+  </h2>
+  <%= form.text_area :content %>
+
+  <li>
     <%= form.submit %>
-  </p>
+  </li>
 
 <% end %>

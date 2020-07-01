@@ -138,3 +138,61 @@ main {
     }
   }
 }
+
+.page-form {
+  h1 {
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 18pt;
+  }
+  li {
+    list-style: none;
+    padding-top: 30px;
+  }
+
+  input[type="text"] {
+    width: 20%;
+    border-width: 1px;
+    border-style: solid;
+    line-height: 25px;
+    font-size: 15px;
+    font-family: $font-family-serif;
+    box-sizing: border-box;
+    background-color: $ivory;
+  }
+  textarea {
+    width: 60%;
+    border-width: 1px;
+    border-style: solid;
+    line-height: 25px;
+    font-size: 15px;
+    font-family: $font-family-serif;
+    box-sizing: border-box;
+    height: 300px;
+    background-color: $ivory;
+  }
+
+  input[type="submit"] {
+    color: $ivory;
+    font-family: $font-family-sans-serif;
+    width: 10%;
+    display: inline-block;
+    padding: 8px 15px;
+    line-height: 1.35;
+    font-weight: 600;
+    font-size: 15px;
+    background: $navy;
+    border: 1px solid $navy;
+
+    &:hover,
+    &:active {
+      text-decoration-line: underline;
+      text-decoration-color: $yellow-dark;
+      text-decoration-thickness: 0.1em;
+      cursor: pointer;
+    }
+  }
+}
