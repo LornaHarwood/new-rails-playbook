@@ -1,3 +1,198 @@
-// Place all the styles related to the Pages controller here.
-// They will automatically be included in application.css.
-// You can use Sass (SCSS) here: https://sass-lang.com/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Cardo:wght@400;700&display=swap");
+
+$navy: #243746;
+$cream: #f3f1e9;
+$ivory: #f9f8f5;
+
+$yellow-light: #fcd672;
+$blue-light: #73c3d5;
+$yellow-dark: #ff9e18;
+
+$font-family-serif: "Cardo", -apple-system, serif;
+$font-family-sans-serif: "Poppins", sans-serif;
+
+body {
+  font-family: $font-family-serif;
+  font-weight: 400;
+  font-size: 15pt;
+  color: $navy;
+  line-height: 1.5;
+  margin: 0;
+  padding: 30px;
+  background: $ivory;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $font-family-sans-serif;
+  font-weight: 600;
+  color: $navy;
+}
+
+main {
+  margin-top: 75px; // 75px is the height of the nav bar
+  padding-left: 20px;
+}
+
+.top-nav-bar {
+  background-color: $blue-light;
+  font-family: $font-family-sans-serif;
+  font-weight: 600;
+  text-align: right;
+  position: fixed;
+  top: 0;
+  left: 0;
+  padding: 10px;
+  width: 100%;
+
+  > ul {
+    list-style: none;
+
+    > li {
+      a {
+        text-decoration-line: none;
+        color: $navy;
+        font-size: 15pt;
+        float: right;
+        line-height: 1;
+        padding-right: 40px;
+        padding-bottom: 15px;
+
+        &:hover,
+        &:focus,
+        &:active {
+          text-decoration-line: underline;
+          text-decoration-color: $yellow-light;
+          text-decoration-thickness: 0.1em;
+          color: $navy;
+        }
+      }
+    }
+  }
+}
+
+.index-page {
+  ul {
+    list-style: none;
+  }
+
+  li {
+    font-family: $font-family-serif;
+    color: $navy;
+    padding-bottom: 10px;
+
+    form {
+      display: inline;
+    }
+  }
+
+  input[type="submit"] {
+    color: $ivory;
+    font-family: $font-family-sans-serif;
+    line-height: 1.35;
+    font-weight: 600;
+    font-size: 15px;
+    background: $navy;
+    border: 1px solid $navy;
+    width: 10%;
+    display: inline;
+
+    &:hover,
+    &:active {
+      text-decoration-line: underline;
+      text-decoration-color: $yellow-dark;
+      text-decoration-thickness: 0.1em;
+      color: none;
+      cursor: pointer;
+    }
+  }
+}
+
+.show-page {
+  div {
+    padding-bottom: 20px;
+    list-style: none;
+  }
+
+  a {
+    font-size: inherit;
+    font-weight: 400;
+    text-decoration-line: underline;
+    text-decoration-color: $blue-light;
+    text-decoration-thickness: 0.1em;
+    padding-top: 20px;
+    font-family: $font-family-serif;
+    color: $navy;
+
+    &:hover,
+    &:active {
+      text-decoration-line: underline;
+      text-decoration-color: $navy;
+      text-decoration-thickness: 0.1em;
+      color: $navy;
+    }
+  }
+}
+
+.page-form {
+  h1 {
+    padding-top: 60px;
+    padding-bottom: 10px;
+  }
+
+  h2 {
+    font-size: 18pt;
+  }
+  li {
+    list-style: none;
+    padding-top: 30px;
+  }
+
+  input[type="text"] {
+    width: 20%;
+    border-width: 1px;
+    border-style: solid;
+    line-height: 25px;
+    font-size: 15px;
+    font-family: $font-family-serif;
+    box-sizing: border-box;
+    background-color: $ivory;
+  }
+  textarea {
+    width: 60%;
+    border-width: 1px;
+    border-style: solid;
+    line-height: 25px;
+    font-size: 15px;
+    font-family: $font-family-serif;
+    box-sizing: border-box;
+    height: 300px;
+    background-color: $ivory;
+  }
+
+  input[type="submit"] {
+    color: $ivory;
+    font-family: $font-family-sans-serif;
+    width: 10%;
+    display: inline-block;
+    padding: 8px 15px;
+    line-height: 1.35;
+    font-weight: 600;
+    font-size: 15px;
+    background: $navy;
+    border: 1px solid $navy;
+
+    &:hover,
+    &:active {
+      text-decoration-line: underline;
+      text-decoration-color: $yellow-dark;
+      text-decoration-thickness: 0.1em;
+      cursor: pointer;
+    }
+  }
+}
