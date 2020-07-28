@@ -1,0 +1,16 @@
+<h1>Create User</h1>
+
+<%= form_with model: @user, class: "user-form", local: true do |form| %>
+
+  <h2>
+    <%= form.label :name %>
+  </h2>
+  <p>
+    <%= form.text_field :name %>
+  </p>
+
+  <p>
+    <%= form.submit %>
+  </p>
+
+<% end %>
