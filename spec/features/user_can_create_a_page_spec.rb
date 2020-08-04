@@ -8,7 +8,7 @@ RSpec.feature "User can create a page" do
 
       visit pages_path
 
-      within "nav" do
+      within ".top-nav-bar" do
         click_link "Create Page"
       end
 

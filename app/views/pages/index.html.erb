@@ -1,19 +1,12 @@
-<div class="index-page">
-  <h1> List of all Pages </h1>
-  <h2>Title</h2>
-  <div>
-    <ul>
-      <% @pages.each do |page| %>
-        <li>
-          <%= page.title %>
-          <%= form_with model: page, method: :get, local: true do |form| %>
-            <% form.submit "Show", data: { slug: page.slug, action: "show" } %>
-          <% end %>
-          <%= form_with model: page, method: :delete, local: true do |form| %>
-            <% form.submit "Delete", data: { slug: page.slug, action: "delete" } %>
-          <% end %>
-        </li>
-      <% end %>
-    </ul>
-  </div>
-</div>
+<aside class="sidebar">
+  <nav class="sidebar-nav">
+    <h1> List of all Pages </h1>
+      <ul>
+        <% @pages.each do |page| %>
+          <li>
+            <a href="<%= page_path(page) %>"><%= page.title %></a>
+          </li>
+        <% end %>
+      </ul>
+  </nav>
+</aside>
