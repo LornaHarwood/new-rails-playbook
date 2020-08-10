@@ -3,10 +3,14 @@ require "rails_helper"
 RSpec.feature "User can create a page" do
   context "When a new page form is submitted" do
     scenario "new action displays the page's title and content" do
+      User.create(name: "Test User")
       title = "New Page"
       content = "New Page Content"
 
-      visit pages_path
+      visit signin_path
+
+      fill_in "Name", with: "Test User"
+      click_button "Sign In"
 
       within ".top-nav-bar" do
         click_link "Create Page"
