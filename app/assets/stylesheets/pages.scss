@@ -46,22 +46,26 @@ main {
   background-color: $blue-light;
   font-family: $font-family-sans-serif;
   font-weight: 600;
-  text-align: right;
   position: fixed;
   top: 0;
   left: 0;
   padding: 10px;
   width: 100%;
+  display: flex;
+  justify-content: space-between;
 
   > ul {
     list-style: none;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    margin: 0;
 
     > li {
       a {
         text-decoration-line: none;
         color: $navy;
         font-size: 15pt;
-        float: right;
         line-height: 1;
         padding-right: 40px;
         padding-bottom: 15px;
@@ -80,8 +84,9 @@ main {
 }
 
 .logo {
-  float: left;
-  padding-left: 15px;
+  padding-top: 15px;
+  padding-left: 10px;
+  padding-bottom: 5px;
 }
 
 .sidebar {
@@ -103,8 +108,8 @@ main {
   }
 
   li {
-      padding-bottom: 20px;
-      padding-left: 10px;
+    padding-bottom: 20px;
+    padding-left: 10px;
     a {
       font-family: $font-family-serif;
       color: $navy;
