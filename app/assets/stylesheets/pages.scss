@@ -158,8 +158,13 @@ main {
   }
 }
 
+.alert {
+  padding-left: 20px;
+}
+
 .page-form,
-.user-form {
+.signup-form,
+.signin-form {
   h2 {
     font-size: 18pt;
   }
